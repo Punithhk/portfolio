@@ -1,0 +1,19 @@
+{
+  "home": {
+    "heroTitle": "I am Punith H K, Software Engineer and Automation Enthusiast.",
+    "heroBio": "I have around 5years of IT experience across various domains like Finacial Services for US based client, Cybersecurity domain. I am a passionate software engineer with a love for automation and problem-solving. I enjoy building efficient and scalable solutions that make a difference.",
+    "heroImage": "profile.png"
+  },
+  "projects": [
+    {
+      "id": "1",
+      "title": "Admin Portfolio CMS",
+      "description": "A custom Next.js portfolio backed by local JSON files with visitor tracking.",
+      "skillsUsed": "Next.js, React, Tailwind CSS, TypeScript",
+      "link": "https://github.com/your-username/portfolio",
+      "photo": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400"
+    }
+  ],
+  "sections": [],
+  "events": []
+}

@@ -2,7 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
+  --card-bg: #f8fafc;
+  --border-color: #e2e8f0;
+  --text-secondary: #475569;
+  --accent-color: #0f172a; /* Sleek black/slate for light mode */
+  --accent-bg: rgba(15, 23, 42, 0.05);
+  --accent-border: rgba(15, 23, 42, 0.2);
 }
 
 @theme inline {
@@ -14,8 +20,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #020617; /* slate-950 */
+    --foreground: #f8fafc; /* slate-100 */
+    --card-bg: #0f172a;    /* slate-900 */
+    --border-color: #1e293b; /* slate-800 */
+    --text-secondary: #94a3b8; /* slate-400 */
+    --accent-color: #06b6d4; /* Cyan for dark mode */
+    --accent-bg: rgba(6, 182, 212, 0.1);
+    --accent-border: rgba(6, 182, 212, 0.4);
   }
 }
 
@@ -23,4 +35,40 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Backgrounds & Borders */
+.bg-slate-950 {
+  background-color: var(--background) !important;
+}
+
+.bg-slate-900 {
+  background-color: var(--card-bg) !important;
+}
+
+.border-slate-800, .border-slate-700 {
+  border-color: var(--border-color) !important;
+}
+
+/* Text Colors */
+.text-white, .text-slate-100, .text-slate-200, .text-slate-50 {
+  color: var(--foreground) !important;
+}
+
+.text-slate-400, .text-slate-300 {
+  color: var(--text-secondary) !important;
+}
+
+/* Accent Mapping */
+.text-cyan-400, .text-cyan-500 {
+  color: var(--accent-color) !important;
+}
+
+.bg-cyan-950\/20, .bg-cyan-500\/10 {
+  background-color: var(--accent-bg) !important;
+}
+
+.border-cyan-500\/40, .border-cyan-500 {
+  border-color: var(--accent-border) !important;
 }
