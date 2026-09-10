@@ -1,8 +1,8 @@
 {
   "home": {
-    "heroTitle": "I am Punith H K, Software Engineer and Automation Enthusiast.",
-    "heroBio": "I have around 5years of IT experience across various domains like Finacial Services for US based client, Cybersecurity domain. I am a passionate software engineer with a love for automation and problem-solving. I enjoy building efficient and scalable solutions that make a difference.",
-    "heroImage": "profile.png"
+  "heroTitle": "Punith H K, Technology Lead & Software Engineer",
+  "heroBio": "Software engineer with 5 years of enterprise IT experience optimizing mission-critical pipelines across cybersecurity and US financial services. Proficient in engineering scalable backend architectures using Python, FastAPI, and React, combined with deploying automated telemetry and monitoring solutions.",
+   "heroImage": "profile.png"
   },
   "projects": [
     {

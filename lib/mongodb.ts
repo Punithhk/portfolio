@@ -1,7 +1,9 @@
 import { MongoClient } from 'mongodb';
 
-const uri = "mongodb+srv://punithhkp960_db_user:Puni123588998@sample.cr7iq0n.mongodb.net/?appName=Sample";
+
+const uri = process.env.NEXTDB_URL as string;
 const options = {};
+
 
 let client: MongoClient;
 let clientPromise: Promise<MongoClient>;

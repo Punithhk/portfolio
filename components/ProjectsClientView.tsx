@@ -151,7 +151,7 @@ export default function ProjectsClientView({ initialProjects }: { initialProject
           return (
             <div key={uniqueKey} className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between">
               {proj.photo && (
-                <img src={proj.photo} alt={proj.title} className="w-full h-48 object-cover border-b border-slate-800" />
+                <img src={proj.photo} alt={proj.title} className="" />
               )}
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>

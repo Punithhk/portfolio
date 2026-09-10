@@ -1,17 +1,26 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ProjectsClientView from '@/components/ProjectsClientView';
-import fs from 'fs';
-import path from 'path';
+import clientPromise from '@/lib/mongodb';
 
-// Read directly from the JSON file on the server
+export const dynamic = 'force-dynamic';
+
 async function getData() {
-  const filePath = path.join(process.cwd(), 'portfolio-data.json');
-  if (!fs.existsSync(filePath)) {
+  try {
+    const client = await clientPromise;
+    const db = client.db('portfolio');
+    const data = await db.collection('content').findOne({ _id: 'main_data' as any });
+    
+    if (!data) {
+      return { projects: [] };
+    }
+    
+    const { _id, ...cleanData } = data;
+    return cleanData;
+  } catch (error) {
+    console.error('Failed to fetch from DB:', error);
     return { projects: [] };
   }
-  const fileData = fs.readFileSync(filePath, 'utf8');
-  return JSON.parse(fileData);
 }
 
 export default async function ProjectsPage() {

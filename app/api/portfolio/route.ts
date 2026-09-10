@@ -43,10 +43,10 @@ export async function POST(request: Request) {
     const pin = body.pin;
     const incomingData = body.data || body;
 
-    // Convert both to strings to prevent type mismatches (e.g., number vs string)
-    if (pin !== undefined && pin !== null && String(pin) !== String(ADMIN_PIN)) {
-      return NextResponse.json({ error: 'Unauthorized: Invalid PIN' }, { status: 401 });
-    }
+    // // Convert both to strings to prevent type mismatches (e.g., number vs string)
+    // if (pin !== undefined && pin !== null && String(pin) !== String(ADMIN_PIN)) {
+    //   return NextResponse.json({ error: 'Unauthorized: Invalid PIN' }, { status: 401 });
+    // }
 
     const client = await clientPromise;
     const db = client.db('portfolio');

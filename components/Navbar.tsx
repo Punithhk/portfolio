@@ -42,7 +42,7 @@ export default function Navbar() {
         {/* Left Side: Brand Logo & Navigation Links */}
         <div className="flex items-center space-x-8">
           <Link href="/" className="text-lg font-black tracking-wider text-white uppercase">
-            Portfolio
+            HKP Portfolio
           </Link>
 
           {/* Desktop Navigation Links */}
