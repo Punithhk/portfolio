@@ -10,7 +10,7 @@ export default function Footer() {
 
         <div className="flex flex-wrap justify-center gap-6 font-medium text-slate-300">
           <a 
-            href="https://github.com/your-username" 
+            href="https://github.com/Punithhk" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="hover:text-cyan-400 transition"
@@ -18,7 +18,7 @@ export default function Footer() {
             GitHub
           </a>
           <a 
-            href="https://linkedin.com/in/your-profile" 
+            href="https://www.linkedin.com/in/punithhk/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="hover:text-cyan-400 transition"
@@ -26,13 +26,13 @@ export default function Footer() {
             LinkedIn
           </a>
           <a 
-            href="mailto:your.email@example.com" 
+            href="mailto:punithhkp960@gmail.com" 
             className="hover:text-cyan-400 transition"
           >
             Email
           </a>
           <a 
-            href="tel:+1234567890" 
+            href="tel:+919380014095" 
             className="hover:text-cyan-400 transition"
           >
             Phone
